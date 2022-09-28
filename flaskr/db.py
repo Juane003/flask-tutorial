@@ -15,8 +15,8 @@ def get_db():
         )
         g.db.row_factory = sqlite3.Row
         # Row hace que la conexion devuelva filas que se comportan como dictionaries lo que nos permite acceder a las columnas por su nombre
-    return g.db
-# en lugar de hacer una base nueva cada vez que se llama get_db, se reutiliza la existente gracias al modulo g
+    return g.db 
+    # en lugar de hacer una base nueva cada vez que se llama get_db, se reutiliza la existente gracias al modulo g
 
 
 def close_db(e=None):

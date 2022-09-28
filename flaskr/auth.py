@@ -49,7 +49,6 @@ def load_logged_in_user():
             (user_id),
         ).fetchone()
 
-
 @bp.route("/register", methods=("GET", "POST"))
 def register():
     # si el usuario envia el formulario, request.method va a ser "POST" y va a empezar a validar el input
